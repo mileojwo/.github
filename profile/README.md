@@ -53,17 +53,21 @@
 <table align="center">
   <tr>
     <td align="center">
-      <a href="https://github.com/lmalma2004">
-        <img src="https://github.com/lmalma2004.png" width="100px;" alt=""/>
+      <a href="https://github.com/solone313">
+        <img src="./assets/junmo-profile.jpg" width="150px;" style="border-radius: 50%;" alt="준모"/>
         <br/>
-        <sub><b>lmalma2004</b></sub>
+        <sub><b>준모</b></sub>
+        <br/>
+        <sub>CEO</sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/solone313">
-        <img src="https://github.com/solone313.png" width="100px;" alt=""/>
+      <a href="https://github.com/lmalma2004">
+        <img src="./assets/hojin-profile.png" width="150px;" style="border-radius: 50%;" alt="호진"/>
         <br/>
-        <sub><b>solone313</b></sub>
+        <sub><b>호진</b></sub>
+        <br/>
+        <sub>CTO</sub>
       </a>
     </td>
   </tr>

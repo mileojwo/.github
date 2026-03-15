@@ -1,13 +1,14 @@
 <div align="center">
 
-# 따랑
+# 따랑해
 
-### 세상의 모든 불편함을 해결하는 스타트업
+### 믿을 수 있는 사람이 소개해주는, 새로운 소개팅 문화
 
 <br/>
 
+[![Service](https://img.shields.io/badge/Service-mileojwo.com-FF6B8A?style=flat-square)](https://mileojwo.com)
 [![Location](https://img.shields.io/badge/Location-South_Korea-blue?style=flat-square)](#)
-[![GitHub Org](https://img.shields.io/badge/GitHub-mileojwo-181717?style=flat-square&logo=github)](#)
+[![GitHub Org](https://img.shields.io/badge/GitHub-mileojwo-181717?style=flat-square&logo=github)](https://github.com/mileojwo)
 
 </div>
 
@@ -15,36 +16,32 @@
 
 <br/>
 
-## About Us
+## About
 
-**따랑**은 일상 속 불편함을 기술로 해결하는 스타트업입니다.
+**따랑해**는 알고리즘이 아닌, **내가 믿는 사람이 직접 소개해주는** 소개팅 서비스입니다.
 
-사용자 중심의 서비스를 만들어, 더 나은 경험을 제공합니다.
+기존 소개팅 앱의 차가운 알고리즘 대신, 친구가 직접 내 소중한 사람을 소개해주는 따뜻한 경험을 만듭니다.
 
-<br/>
-
-## Projects
-
-| Project | Description |
-|:--------|:------------|
-| [**issueisseo**](https://github.com/mileojwo/issueisseo) | 이슈있어 - 메인 프로젝트 |
-| [issueisseo-mono](https://github.com/mileojwo/issueisseo-mono) | 모노레포 |
-| [issueisseo-web](https://github.com/mileojwo/issueisseo-web) | 웹 클라이언트 |
-| [issueisseo-android](https://github.com/mileojwo/issueisseo-android) | Android 앱 |
-| [issueisseo-ios](https://github.com/mileojwo/issueisseo-ios) | iOS 앱 |
+> *"불완전하지만 진심 어린 추천이, 완벽하지만 차가운 알고리즘을 이긴다."*
 
 <br/>
 
-## Tech Stack
+### How It Works
 
-<div align="center">
+```
+🧑 따랑지기 (소개해주는 사람)
+    ↓  내 친구를 등록하고
+💕 따랑이 (소개받는 사람)
+    ↓  그룹 안에서
+🏠 따랑방 (소개팅 그룹)
+    ↓  서로의 친구를 소개하면
+🔔 따르릉! → 매칭 성공!
+```
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=apple&logoColor=white)
-
-</div>
+1. **따랑지기**가 주변의 소중한 친구(**따랑이**)를 등록합니다
+2. **따랑방**에 참여해 다른 따랑지기의 따랑이를 확인합니다
+3. 마음에 드는 따랑이에게 **따르릉**(매칭 요청)을 보냅니다
+4. 상대 따랑지기가 수락하면 **매칭 성공**!
 
 <br/>
 
@@ -75,10 +72,85 @@
 
 <br/>
 
+## Tech Stack
+
+<div align="center">
+
+**Backend**
+
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![gRPC](https://img.shields.io/badge/gRPC-244C5A?style=for-the-badge&logo=google&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+
+**Frontend**
+
+![React](https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+
+**Mobile**
+
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white)
+
+**Infra**
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+</div>
+
+<br/>
+
+## Architecture
+
+```
+┌─────────────┐  ┌─────────────┐
+│   Android    │  │     iOS     │
+│  (Kotlin)    │  │   (Swift)   │
+└──────┬───────┘  └──────┬──────┘
+       │    WebView       │
+       └────────┬─────────┘
+                │
+       ┌────────▼────────┐
+       │   React SPA     │
+       │  (gRPC-Web)     │
+       └────────┬────────┘
+                │
+       ┌────────▼────────┐
+       │  Envoy Proxy    │
+       └────────┬────────┘
+                │
+       ┌────────▼────────┐
+       │   Go gRPC API   │
+       └───┬─────────┬───┘
+           │         │
+    ┌──────▼──┐  ┌───▼─────┐
+    │PostgreSQL│  │  Redis  │
+    └─────────┘  └─────────┘
+```
+
+<br/>
+
+## Repositories
+
+| Repository | Description |
+|:-----------|:------------|
+| [**issueisseo**](https://github.com/mileojwo/issueisseo) | 프로젝트 총괄 (기획, 문서, 설계) |
+| [issueisseo-mono](https://github.com/mileojwo/issueisseo-mono) | Go 백엔드 + Proto 정의 |
+| [issueisseo-web](https://github.com/mileojwo/issueisseo-web) | React 웹 클라이언트 (Nx 모노레포) |
+| [issueisseo-android](https://github.com/mileojwo/issueisseo-android) | Android 앱 (Kotlin WebView) |
+| [issueisseo-ios](https://github.com/mileojwo/issueisseo-ios) | iOS 앱 (Swift WKWebView) |
+
+<br/>
+
 ---
 
 <div align="center">
 
-*Built with passion in South Korea*
+*Built with love in South Korea* 💕
 
 </div>

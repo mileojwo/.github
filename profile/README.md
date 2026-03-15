@@ -53,7 +53,7 @@
 <table align="center">
   <tr>
     <td align="center">
-      <a href="https://github.com/solone313">
+      <a href="https://github.com/lmalma2004">
         <img src="./assets/junmo-profile.jpg" width="150px;" style="border-radius: 50%;" alt="준모"/>
         <br/>
         <sub><b>준모</b></sub>
@@ -62,8 +62,8 @@
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/lmalma2004">
-        <img src="./assets/hojin-profile.png" width="150px;" style="border-radius: 50%;" alt="호진"/>
+      <a href="https://github.com/solone313">
+        <img src="./assets/hojin-profile.jpg" width="150px;" style="border-radius: 50%;" alt="호진"/>
         <br/>
         <sub><b>호진</b></sub>
         <br/>

@@ -16,6 +16,33 @@
 
 <br/>
 
+## Team
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/lmalma2004">
+        <img src="./assets/junmo-profile.jpg" width="250px;" style="border-radius: 50%;" alt="준모"/>
+        <br/><br/>
+        <sub><b>준모</b></sub>
+        <br/>
+        <sub>CEO</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/solone313">
+        <img src="./assets/hojin-profile.jpg" width="250px;" style="border-radius: 50%;" alt="호진"/>
+        <br/><br/>
+        <sub><b>호진</b></sub>
+        <br/>
+        <sub>CTO</sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
 ## About
 
 **따랑해**는 알고리즘이 아닌, **내가 믿는 사람이 직접 소개해주는** 소개팅 서비스입니다.
@@ -42,35 +69,6 @@
 2. **따랑방**에 참여해 다른 따랑지기의 따랑이를 확인합니다
 3. 마음에 드는 따랑이에게 **따르릉**(매칭 요청)을 보냅니다
 4. 상대 따랑지기가 수락하면 **매칭 성공**!
-
-<br/>
-
-## Team
-
-<table align="center">
-  <tr>
-    <td align="center">
-      <a href="https://github.com/lmalma2004">
-        <img src="./assets/junmo-profile.jpg" width="150px;" style="border-radius: 50%;" alt="준모"/>
-        <br/>
-        <sub><b>준모</b></sub>
-        <br/>
-        <sub>CEO</sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/solone313">
-        <img src="./assets/hojin-profile.jpg" width="150px;" style="border-radius: 50%;" alt="호진"/>
-        <br/>
-        <sub><b>호진</b></sub>
-        <br/>
-        <sub>CTO</sub>
-      </a>
-    </td>
-  </tr>
-</table>
-
-<br/>
 
 ## Tech Stack
 
